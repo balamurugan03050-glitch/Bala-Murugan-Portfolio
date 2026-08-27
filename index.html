@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bala Murugan | Electrical & Electronics Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="Bala Murugan - Electrical and Electronics Engineering student portfolio showcasing EV technology, embedded systems, industrial automation, projects, skills and certifications."
+    />
+    <meta name="keywords" content="Bala Murugan, Electrical Engineering, EV Technology, Embedded Systems, Industrial Automation, PLC, SCADA, IoT, Portfolio, IFET, Villupuram" />
+    <meta name="author" content="Bala Murugan" />
+    <meta name="theme-color" content="#080b14" />
+    <meta property="og:title" content="Bala Murugan – Electrical & Electronics Engineering" />
+    <meta property="og:description" content="Electrical and Electronics Engineering student focused on EV technology, embedded systems and industrial automation." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts: Inter + Space Grotesk + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader" aria-hidden="true">
+      <div class="loader-inner">
+        <div class="loader-icon">⚡</div>
+        <div class="loader-name">BALA MURUGAN</div>
+        <div class="loader-status">LOADING PORTFOLIO<span class="loader-dots"></span></div>
+        <div class="loader-bar"><span class="loader-bar-fill"></span></div>
+      </div>
+    </div>
+
+    <!-- Back to top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 7l-6 6 1.4 1.4L12 9.8l4.6 4.6L18 13z"/></svg>
+    </button>
+
+    <!-- Header / Navigation -->
+    <header class="site-header" id="siteHeader">
+      <nav class="nav" aria-label="Primary">
+        <a href="#home" class="brand" aria-label="Bala Murugan home">
+          <span class="brand-badge">
+            <span class="brand-icon">BM</span>
+          </span>
+          <span class="brand-name">BALA MURUGAN</span>
+        </a>
+
+        <button
+          class="burger"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="assets/Bala_Murugan_Resume.pdf" download target="_blank" class="btn btn-primary btn-sm">
+              <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M5 20h14v-2H5v2zM12 4v9l3.3-3.3 1.4 1.4L12 16 7.3 11.1l1.4-1.4L12 13V4h0z"/></svg>
+              Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            AVAILABLE FOR OPPORTUNITIES
+          </div>
+          <span class="greeting">Hello, I'm</span>
+          <h1 class="hero-name">Bala Murugan</h1>
+          <div class="roles">
+            <span>Electrical Engineering</span>
+            <span class="divider">·</span>
+            <span>EV Technology</span>
+            <span class="divider">·</span>
+            <span>Embedded Systems</span>
+            <span class="divider">·</span>
+            <span>Industrial Automation</span>
+          </div>
+          <p class="tagline">
+            Electrical and Electronics Engineering student passionate about building smart electrical
+            solutions — from secure EV charging systems to industrial automation and embedded projects.
+          </p>
+          <div class="actions">
+            <a href="#projects" class="btn btn-primary">
+              View Projects
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+            <a href="assets/Bala_Murugan_Resume.pdf" download target="_blank" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M5 20h14v-2H5v2zM12 4v9l3.3-3.3 1.4 1.4L12 16 7.3 11.1l1.4-1.4L12 13V4h0z"/></svg>
+              Download Resume
+            </a>
+          </div>
+        </div>
+        <a href="#about" class="hero-scroll" aria-label="Scroll to About"><span></span></a>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-label reveal">01 — ABOUT ME</div>
+          <h2 class="section-title reveal">About Me</h2>
+          <p class="section-subtitle reveal">Electrical Engineering student focused on practical engineering solutions.</p>
+
+          <div class="about-grid">
+            <div class="about-left reveal">
+              <div class="about-photo-wrap">
+                <div class="about-photo-glow"></div>
+                <div class="about-photo">
+                  <img src="assets/profile.jpg" alt="Portrait of Bala Murugan" loading="lazy" />
+                </div>
+                <div class="about-photo-ring"></div>
+              </div>
+              <div class="about-name">Bala Murugan</div>
+              <div class="about-role">Electrical & Electronics Engineering</div>
+              <div class="about-loc">IFET College of Engineering, Villupuram</div>
+            </div>
+
+            <div class="about-right">
+              <article class="glass about-bio reveal">
+                <p>
+                  I am Bala Murugan, a B.E. Electrical and Electronics Engineering student at
+                  IFET College of Engineering, Villupuram. I have strong interest in power systems,
+                  control systems, EV technology, embedded systems and industrial automation.
+                  I enjoy developing practical engineering solutions for real-world problems.
+                </p>
+              </article>
+
+              <div class="about-cards">
+                <article class="glass info-card reveal">
+                  <span class="info-icon">🎓</span>
+                  <div>
+                    <span class="info-label">Education</span>
+                    <span class="info-value">B.E. Electrical & Electronics Engineering</span>
+                  </div>
+                </article>
+                <article class="glass info-card reveal">
+                  <span class="info-icon">📊</span>
+                  <div>
+                    <span class="info-label">CGPA</span>
+                    <span class="info-value">7.89 / 10</span>
+                  </div>
+                </article>
+                <article class="glass info-card reveal">
+                  <span class="info-icon">📅</span>
+                  <div>
+                    <span class="info-label">Batch</span>
+                    <span class="info-value">2023 – 2027</span>
+                  </div>
+                </article>
+                <article class="glass info-card reveal">
+                  <span class="info-icon">⚡</span>
+                  <div>
+                    <span class="info-label">Focus</span>
+                    <span class="info-value">EV · Embedded · Automation</span>
+                  </div>
+                </article>
+              </div>
+
+              <div class="glass goals reveal">
+                <div class="goals-title">CURRENT GOALS</div>
+                <div class="goal-list">
+                  <div class="goal"><span class="goal-dot"></span>Deepening expertise in EV charging systems & battery management</div>
+                  <div class="goal"><span class="goal-dot"></span>Exploring satellite technology and space systems</div>
+                  <div class="goal"><span class="goal-dot"></span>Building secure IoT-based industrial automation solutions</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-label reveal">02 — TECHNICAL SKILLS</div>
+          <h2 class="section-title reveal">Technical Skills</h2>
+          <p class="section-subtitle reveal">Engineering and technology areas I work with.</p>
+
+          <div class="skills-grid">
+            <article class="glass skill-card reveal">
+              <div class="skill-header"><span class="skill-icon">⚡</span><h3 class="skill-title">Electrical Engineering</h3><span class="skill-count">6</span></div>
+              <div class="skill-tags">
+                <span class="tag">Power Systems</span><span class="tag">Circuit Analysis</span>
+                <span class="tag">Control Systems</span><span class="tag">Electrical Machines</span>
+                <span class="tag">Power Electronics</span><span class="tag">EV Technology</span>
+              </div>
+            </article>
+            <article class="glass skill-card reveal">
+              <div class="skill-header"><span class="skill-icon">🔧</span><h3 class="skill-title">Embedded Systems</h3><span class="skill-count">6</span></div>
+              <div class="skill-tags">
+                <span class="tag">Arduino</span><span class="tag">Raspberry Pi</span>
+                <span class="tag">Sensors</span><span class="tag">GSM</span>
+                <span class="tag">OLED</span><span class="tag">Servo Motor</span>
+              </div>
+            </article>
+            <article class="glass skill-card reveal">
+              <div class="skill-header"><span class="skill-icon">🏭</span><h3 class="skill-title">Industrial Automation</h3><span class="skill-count">5</span></div>
+              <div class="skill-tags">
+                <span class="tag">PLC</span><span class="tag">SCADA</span>
+                <span class="tag">Pneumatics</span><span class="tag">Sensors</span>
+                <span class="tag">Actuators</span>
+              </div>
+            </article>
+            <article class="glass skill-card reveal">
+              <div class="skill-header"><span class="skill-icon">💻</span><h3 class="skill-title">Programming</h3><span class="skill-count">2</span></div>
+              <div class="skill-tags">
+                <span class="tag">Python</span><span class="tag">PLC</span>
+              </div>
+            </article>
+            <article class="glass skill-card reveal">
+              <div class="skill-header"><span class="skill-icon">🛠️</span><h3 class="skill-title">Engineering Tools</h3><span class="skill-count">4</span></div>
+              <div class="skill-tags">
+                <span class="tag">AutoCAD</span><span class="tag">MATLAB</span>
+                <span class="tag">Git</span><span class="tag">GitHub</span>
+              </div>
+            </article>
+            <article class="glass skill-card reveal">
+              <div class="skill-header"><span class="skill-icon">🚀</span><h3 class="skill-title">Emerging Technology</h3><span class="skill-count">4</span></div>
+              <div class="skill-tags">
+                <span class="tag">IoT</span><span class="tag">AI/ML</span>
+                <span class="tag">CubeSat</span><span class="tag">Satellite Systems</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-label reveal">03 — EXPERIENCE & INTERNSHIP</div>
+          <h2 class="section-title reveal">My Experience</h2>
+          <p class="section-subtitle reveal">Industrial internship and practical exposure.</p>
+
+          <div class="timeline">
+            <article class="glass timeline-card reveal">
+              <div class="card-top">
+                <div class="icon-wrap"><span class="icon">💼</span></div>
+                <div>
+                  <div class="timeline-role">Industrial Intern</div>
+                  <div class="timeline-org">TVS Training Services Private Limited</div>
+                </div>
+                <span class="timeline-year">2026 · Chennai</span>
+              </div>
+              <p class="timeline-desc">
+                Practical exposure to PLC programming, industrial automation, pneumatic systems,
+                sensors, actuators and electrical control components.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">PLC</span><span class="tag">Pneumatics</span>
+                <span class="tag">Sensors</span><span class="tag">Actuators</span>
+                <span class="tag">Automation</span>
+              </div>
+            </article>
+
+            <article class="glass timeline-card reveal">
+              <div class="card-top">
+                <div class="icon-wrap"><span class="icon">💼</span></div>
+                <div>
+                  <div class="timeline-role">Industrial Intern</div>
+                  <div class="timeline-org">Sundaram High Tech & Heavy Electricals</div>
+                </div>
+                <span class="timeline-year">2025 · Rampakkam</span>
+              </div>
+              <p class="timeline-desc">
+                Exposure to industrial electrical systems, equipment maintenance and
+                electrical engineering practices.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">Electrical Systems</span><span class="tag">Maintenance</span>
+                <span class="tag">Industrial Safety</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-label reveal">04 — PROJECTS EXHIBITION</div>
+          <h2 class="section-title reveal">Featured Project</h2>
+          <p class="section-subtitle reveal">My major engineering project and technical work.</p>
+
+          <!-- Main featured project -->
+          <article class="glass featured-project reveal">
+            <div class="fp-visual" aria-hidden="true">
+              <div class="fp-grid"></div>
+              <div class="fp-glow"></div>
+              <svg viewBox="0 0 500 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="200" y="60" width="100" height="150" rx="12" fill="rgba(8,11,20,0.9)" stroke="#a78bfa" stroke-width="1.6" />
+                <rect x="218" y="80" width="64" height="44" rx="6" fill="rgba(124,58,237,0.18)" stroke="#a78bfa" stroke-width="1" />
+                <path d="M240 90h12v12h-12zM240 108h12v6h-12z" fill="#a78bfa" />
+                <rect x="220" y="140" width="60" height="8" rx="4" fill="rgba(167,139,250,0.6)" />
+                <rect x="220" y="156" width="40" height="8" rx="4" fill="rgba(96,165,250,0.45)" />
+                <rect x="220" y="172" width="52" height="8" rx="4" fill="rgba(167,139,250,0.5)" />
+                <rect x="220" y="188" width="30" height="8" rx="4" fill="rgba(96,165,250,0.3)" />
+                <path d="M110 70 L150 54 L190 70 L190 120 C190 150, 150 168, 150 168 C150 168, 110 150, 110 120 Z" fill="rgba(124,58,237,0.12)" stroke="#a78bfa" stroke-width="1.4" />
+                <path d="M132 110 l14 14 l24 -28" stroke="#a78bfa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M120 250 H420 L408 220 H360 L346 206 H250 L226 220 H200 Z" fill="rgba(8,11,20,0.9)" stroke="#a78bfa" stroke-width="1.5" />
+                <circle cx="250" cy="258" r="14" fill="rgba(8,11,20,0.9)" stroke="#a78bfa" stroke-width="1.5" />
+                <circle cx="372" cy="258" r="14" fill="rgba(8,11,20,0.9)" stroke="#a78bfa" stroke-width="1.5" />
+                <rect x="280" y="216" width="56" height="8" rx="3" fill="#60a5fa" opacity="0.6" />
+                <path d="M300 210 C 280 220, 290 240, 310 248" stroke="#a78bfa" stroke-width="2" stroke-dasharray="3 4" />
+                <circle cx="60" cy="120" r="6" fill="#a78bfa" opacity="0.7" />
+                <circle cx="60" cy="120" r="14" fill="none" stroke="#a78bfa" opacity="0.3" />
+                <circle cx="450" cy="140" r="6" fill="#60a5fa" opacity="0.7" />
+                <circle cx="450" cy="140" r="14" fill="none" stroke="#60a5fa" opacity="0.3" />
+              </svg>
+            </div>
+            <div class="fp-body">
+              <span class="fp-badge">★ Major Project</span>
+              <h3 class="fp-title">
+                Secure Smart EV Charging Station with Real-Time Intrusion Detection and Authentication System
+              </h3>
+              <p class="fp-desc">
+                A secure smart EV charging station concept combining user authentication, real-time
+                intrusion detection, charging-status monitoring and automatic protective control.
+              </p>
+              <div class="fp-features-section">
+                <div class="fp-detail-label">KEY FEATURES</div>
+                <ul class="fp-features">
+                  <li><span class="feature-dot"></span>User Authentication</li>
+                  <li><span class="feature-dot"></span>Real-Time Intrusion Detection</li>
+                  <li><span class="feature-dot"></span>Unauthorized Access Alerts</li>
+                  <li><span class="feature-dot"></span>Voltage & Current Monitoring</li>
+                  <li><span class="feature-dot"></span>Automatic Charging Isolation</li>
+                </ul>
+              </div>
+              <div class="skill-tags">
+                <span class="tag domain">EV</span><span class="tag domain">IoT</span>
+                <span class="tag domain">Embedded Systems</span><span class="tag domain">Sensors</span>
+                <span class="tag domain">Authentication</span><span class="tag domain">Cybersecurity</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Smaller project cards -->
+          <div class="projects-grid">
+            <article class="glass project-card reveal">
+              <div class="project-header"><span class="project-icon">📡</span><h3 class="project-title">Ultrasonic Fuel Tank</h3></div>
+              <p class="project-desc">Arduino and ultrasonic sensor based fuel-level and distance measurement project.</p>
+              <div class="skill-tags">
+                <span class="tag">Arduino</span><span class="tag">Ultrasonic Sensor</span><span class="tag">OLED</span>
+              </div>
+            </article>
+            <article class="glass project-card reveal">
+              <div class="project-header"><span class="project-icon">🔌</span><h3 class="project-title">Smart EV Monitoring</h3></div>
+              <p class="project-desc">EV charging-status monitoring and secure charging infrastructure concept.</p>
+              <div class="skill-tags">
+                <span class="tag">EV</span><span class="tag">IoT</span><span class="tag">Embedded</span>
+              </div>
+            </article>
+            <article class="glass project-card reveal">
+              <div class="project-header"><span class="project-icon">🛰️</span><h3 class="project-title">Satellite Detection System</h3></div>
+              <p class="project-desc">Concept for monitoring forest fires and unauthorized mining using satellite imagery.</p>
+              <div class="skill-tags">
+                <span class="tag">Satellite</span><span class="tag">AI/ML</span><span class="tag">Image Analysis</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section">
+        <div class="container">
+          <div class="section-label reveal">05 — CERTIFICATIONS GALLERY</div>
+          <h2 class="section-title reveal">Credentials & Recognition</h2>
+          <p class="section-subtitle reveal">Selected certifications and technical activities.</p>
+
+          <div class="cert-grid">
+            <article class="glass cert-card reveal">
+              <div class="cert-icon">🏆</div>
+              <div class="achievement">CERTIFICATION</div>
+              <h3 class="cert-title">Getting Started with AI</h3>
+              <p class="cert-org">IBM SkillBuild</p>
+              <span class="cert-year">2026</span>
+            </article>
+            <article class="glass cert-card reveal">
+              <div class="cert-icon">🤖</div>
+              <div class="achievement">CERTIFICATION</div>
+              <h3 class="cert-title">AI Course</h3>
+              <p class="cert-org">Infosys Springboard</p>
+              <span class="cert-year">2026</span>
+            </article>
+            <article class="glass cert-card reveal">
+              <div class="cert-icon">🎯</div>
+              <div class="achievement">ACHIEVEMENT</div>
+              <h3 class="cert-title">3rd Prize — Technical Quiz</h3>
+              <p class="cert-org">ISTE Chapter, IFET College</p>
+              <span class="cert-year">2026</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section section-alt">
+        <div class="container">
+          <div class="section-label reveal">06 — EDUCATION HALL</div>
+          <h2 class="section-title reveal">My Education</h2>
+          <p class="section-subtitle reveal">Academic background.</p>
+
+          <div class="edu-grid">
+            <article class="glass edu-card reveal">
+              <div class="card-top">
+                <div class="icon-wrap"><span class="icon">🎓</span></div>
+                <div>
+                  <div class="timeline-role">Undergraduate</div>
+                  <div class="timeline-org">B.E. Electrical and Electronics Engineering</div>
+                  <div class="timeline-sub">IFET College of Engineering, Villupuram</div>
+                </div>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-period">2023 – 2027</span>
+                <div class="score-box">
+                  <div class="score-num">7.89</div>
+                  <div class="score-label">CGPA</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="glass edu-card reveal">
+              <div class="card-top">
+                <div class="icon-wrap"><span class="icon">🏫</span></div>
+                <div>
+                  <div class="timeline-role">Higher Secondary</div>
+                  <div class="timeline-org">Higher Secondary Education</div>
+                  <div class="timeline-sub">ALPHA Matric Higher Secondary School, Puducherry</div>
+                </div>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-period">Schooling</span>
+                <div class="score-box">
+                  <div class="score-num">65%</div>
+                  <div class="score-label">PERCENTAGE</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- More: Achievements + Languages & Interests -->
+      <section id="more" class="section">
+        <div class="container">
+          <div class="section-label reveal">07 — MORE ABOUT ME</div>
+          <h2 class="section-title reveal">More About Me</h2>
+          <p class="section-subtitle reveal">Achievements, languages and interests.</p>
+
+          <div class="more-grid">
+            <div class="more-block reveal">
+              <h3 class="block-title">Achievements</h3>
+              <div class="highlights">
+                <article class="glass highlight">
+                  <span class="highlight-icon">🏆</span>
+                  <div><div class="highlight-title">3rd Prize — Technical Quiz</div><div class="highlight-desc">ISTE Chapter, IFET College</div></div>
+                </article>
+                <article class="glass highlight">
+                  <span class="highlight-icon">🤖</span>
+                  <div><div class="highlight-title">AI Certification</div><div class="highlight-desc">IBM SkillBuild</div></div>
+                </article>
+                <article class="glass highlight">
+                  <span class="highlight-icon">💡</span>
+                  <div><div class="highlight-title">AI Course</div><div class="highlight-desc">Infosys Springboard</div></div>
+                </article>
+              </div>
+            </div>
+
+            <div class="more-block reveal">
+              <h3 class="block-title">Languages</h3>
+              <div class="chip-grid">
+                <span class="chip">Tamil</span>
+                <span class="chip">English</span>
+              </div>
+              <h3 class="block-title block-mt">Hobbies</h3>
+              <div class="chip-grid">
+                <span class="chip">Researching and learning about satellite technology</span>
+                <span class="chip">Exploring new developments in space and satellite systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <div class="section-label reveal">08 — COMMUNICATION HUB</div>
+          <h2 class="section-title reveal">Let's Connect</h2>
+          <p class="section-subtitle reveal">Open to opportunities in electrical, embedded and automation engineering.</p>
+
+          <div class="contact-grid">
+            <div class="contact-left reveal">
+              <div class="availability">
+                <span class="avail-dot"></span>
+                <div><div class="avail-title">Available for Opportunities</div><div class="avail-sub">Open to internships, projects and collaborations</div></div>
+              </div>
+
+              <div class="contact-links">
+                <a href="mailto:balamurugan03050@gmail.com" class="contact-item">
+                  <span class="contact-icon">✉️</span>
+                  <div><div class="contact-label">EMAIL</div><div class="contact-value">balamurugan03050@gmail.com</div></div>
+                </a>
+                <a href="tel:+918122273668" class="contact-item">
+                  <span class="contact-icon">📱</span>
+                  <div><div class="contact-label">PHONE</div><div class="contact-value">+91 81222 73668</div></div>
+                </a>
+                <a href="https://www.linkedin.com/in/bala-murugan-299a0130a/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                  <span class="contact-icon">💼</span>
+                  <div><div class="contact-label">LINKEDIN</div><div class="contact-value">bala-murugan-299a0130a</div></div>
+                </a>
+                <a href="https://github.com/balamurugan03050-glitch" target="_blank" rel="noopener noreferrer" class="contact-item">
+                  <span class="contact-icon">🐙</span>
+                  <div><div class="contact-label">GITHUB</div><div class="contact-value">balamurugan03050-glitch</div></div>
+                </a>
+              </div>
+            </div>
+
+            <form class="glass form-card reveal" id="contactForm" novalidate>
+              <div class="form-title">Send a Message</div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="cName">Name</label>
+                  <input type="text" id="cName" name="name" placeholder="Your name" required />
+                  <span class="form-error" data-for="cName"></span>
+                </div>
+                <div class="field">
+                  <label for="cEmail">Email</label>
+                  <input type="email" id="cEmail" name="email" placeholder="you@example.com" required />
+                  <span class="form-error" data-for="cEmail"></span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="cSubject">Subject</label>
+                <input type="text" id="cSubject" name="subject" placeholder="Subject" required />
+                <span class="form-error" data-for="cSubject"></span>
+              </div>
+              <div class="field">
+                <label for="cMessage">Message</label>
+                <textarea id="cMessage" name="message" rows="5" placeholder="Your message" required></textarea>
+                <span class="form-error" data-for="cMessage"></span>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+              <p class="form-success" id="formSuccess" hidden>Thanks! Your email client is opening to send the message.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-badge"><span class="brand-icon">BM</span></span>
+          <div>
+            <div class="footer-name">Bala Murugan</div>
+            <div class="footer-degree">B.E. Electrical & Electronics Engineering</div>
+          </div>
+        </div>
+        <div class="footer-tags">Electrical Engineering · EV Technology · Embedded Systems · Industrial Automation</div>
+        <div class="footer-social">
+          <a href="mailto:balamurugan03050@gmail.com" class="social-btn" aria-label="Email">✉️</a>
+          <a href="tel:+918122273668" class="social-btn" aria-label="Phone">📱</a>
+          <a href="https://www.linkedin.com/in/bala-murugan-299a0130a/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">💼</a>
+          <a href="https://github.com/balamurugan03050-glitch" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">🐙</a>
+        </div>
+        <div class="copyright">© 2026 Bala Murugan. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
